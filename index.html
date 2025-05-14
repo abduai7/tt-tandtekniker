@@ -14,15 +14,18 @@
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
   <!-- ====== NAVBAR ====== -->
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark shadow-sm py-3 animated-gradient-bg" style="z-index:3000;">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark shadow-sm py-3 animated-gradient-bg">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <a class="navbar-brand d-flex align-items-center" href="#hero-video">
         <img src="assets/images/logo.png" alt="Tt tandtekniker" height="50" class="logo-animated glow-logo">
         <div class="ms-2 lab-name">
           <span class="main-title">Tt tandtekniker</span><br>
@@ -34,24 +37,22 @@
       </button>
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link navlink-animated" href="#">Startsida</a></li>
-          <li class="nav-item"><a class="nav-link navlink-animated" href="#">Nyheter</a></li>
-          <li class="nav-item"><a class="nav-link navlink-animated" href="#">Om oss</a></li>
+          <li class="nav-item"><a class="nav-link navlink-animated" href="#hero-video">Startsida</a></li>
+          <li class="nav-item"><a class="nav-link navlink-animated" href="#about">Om oss</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle navlink-animated" href="#" data-bs-toggle="dropdown">Tjänster</a>
+            <a class="nav-link dropdown-toggle navlink-animated" href="#cards-section" data-bs-toggle="dropdown">Tjänster</a>
             <ul class="dropdown-menu dropdown-animated">
-              <li><a class="dropdown-item" href="#">Implantat</a></li>
-              <li><a class="dropdown-item" href="#">Fast protetik</a></li>
-              <li><a class="dropdown-item" href="#">Avtagbar protetik</a></li>
-              <li><a class="dropdown-item" href="#">Bettfysiologi</a></li>
-              <li><a class="dropdown-item" href="#">Digital avtryck</a></li>
+              <li><a class="dropdown-item" href="#cards-section">Implantat</a></li>
+              <li><a class="dropdown-item" href="#cards-section">Fast protetik</a></li>
+              <li><a class="dropdown-item" href="#cards-section">Avtagbar protetik</a></li>
+              <li><a class="dropdown-item" href="#cards-section">Bettfysiologi</a></li>
+              <li><a class="dropdown-item" href="#cards-section">Digital avtryck</a></li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link navlink-animated" href="#">Priser</a></li>
-          <li class="nav-item"><a class="nav-link navlink-animated" href="#">Beställning</a></li>
-          <li class="nav-item"><a class="nav-link navlink-animated" href="#">Galleri</a></li>
-          <li class="nav-item"><a class="nav-link navlink-animated" href="#">Kontakt</a></li>
-          <li class="nav-item"><a class="nav-link navlink-animated" href="#">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link navlink-animated" href="#gallery">Galleri</a></li>
+          <li class="nav-item"><a class="nav-link navlink-animated" href="#contact">Kontakt</a></li>
+          <li class="nav-item"><a class="nav-link navlink-animated" href="#reviews">Reviews</a></li>
         </ul>
       </div>
     </div>
@@ -70,7 +71,7 @@
   </section>
 
   <!-- ====== CARDS SECTION ====== -->
-  <section class="cards-section py-5 bg-dark" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+  <section id="cards-section" class="cards-section py-5 bg-dark" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
     <div class="container">
       <div class="cards-wrapper">
         <div class="card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
@@ -127,21 +128,15 @@
       <h2 class="experience-title mb-4">Erfarenhet och Kompetens</h2>
       <div class="row align-items-center">
         <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="800">
-          <p>Vi är ett modernt tandtekniskt laboratorium i Uppsala. Företagets grundare har varit involverade 
-            i tandteknik från ung ålder, familjens senaste 3 generationer är tandtekniker. Den långa erfarenheten 
+          <p>Vi är ett modernt tandtekniskt laboratorium i Uppsala. Företagets grundare har varit involverade
+            i tandteknik från ung ålder, familjens senaste 3 generationer är tandtekniker. Den långa erfarenheten
             optimerar utförandet av produktionen som täcker alla tandklinikens behov.
           </p>
           <p class="fst-italic">Vi är certifierade och följer alla nedanstående föreskrifter:</p>
           <ul class="list-unstyled mt-3">
-            <li class="mb-3" data-aos="fade-up" data-aos-delay="100"><span class="check-icon">✔</span>
-              Medlemskap i Sveriges Tandteknikerförbund.
-            </li>
-            <li class="mb-3" data-aos="fade-up" data-aos-delay="200"><span class="check-icon">✔</span>
-              Godkänd kvalitetsäkring. Enligt MDR (EU) 2017/745 om medicintekniska produkter.
-            </li>
-            <li class="mb-3" data-aos="fade-up" data-aos-delay="300"><span class="check-icon">✔</span>
-              Registrering hos läkemedelsverket som tillverkare av specialanpassade medicinska produkter.
-            </li>
+            <li class="mb-3"><span class="check-icon">✔</span> Medlemskap i Sveriges Tandteknikerförbund.</li>
+            <li class="mb-3"><span class="check-icon">✔</span> Godkänd kvalitetsäkring enligt MDR (EU) 2017/745.</li>
+            <li class="mb-3"><span class="check-icon">✔</span> Registrering hos Läkemedelsverket.</li>
           </ul>
         </div>
         <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="800">
@@ -153,24 +148,24 @@
   </section>
 
   <!-- ====== VISION SECTION ====== -->
-  <section id="vision" class="py-5 bg-dark text-light" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+  <section id="vision" class="py-5 bg-dark text-light" data-aos="fade-up" data-aos-duration="800">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="800">
           <h3 class="section-heading">Vår Vision</h3>
           <p class="vision-text">
-            Vår vision är att identifiera möjligheter och lösningar för den mest optimala tand estetik 
+            Vår vision är att identifiera möjligheter och lösningar för den mest optimala tand estetik
             för att skapa ett underbart leende hos alla patienter.
           </p>
           <p class="vision-text">
-            Den personliga relationen och goda samarbetet mellan tandkliniken och tandtekniska laboratoriet 
+            Den personliga relationen och goda samarbetet mellan tandkliniken och tandtekniska laboratoriet
             är nyckeln som vi har hög värdesättning av i Artems tandtekniker.
           </p>
           <p class="vision-text">
-            Genom produktion täcker vi alla tandklinikers behov, direkt från laboratoriet med trygg säkerhets leverans.
+            Genom produktionen täcker vi alla tandklinikers behov, direkt från laboratoriet med trygg säkerhetsleverans.
           </p>
         </div>
-        <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+        <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="800">
           <img src="assets/images/alt-background-bw-2.jpg" alt="Vision"
                class="img-fluid rounded shadow-sm">
         </div>
@@ -179,32 +174,31 @@
   </section>
 
   <!-- ====== HIGHLIGHT SECTION ====== -->
-  <section id="highlight" class="highlight-section position-relative text-center text-white py-5"
-           data-aos="fade-down" data-aos-duration="800">
+  <section id="highlight" class="highlight-section position-relative text-center text-white py-5" data-aos="fade-down" data-aos-duration="800">
     <div class="highlight-watermark">Tt tandtekniker</div>
     <div class="container position-relative">
       <p class="lead mb-0">
-        Ni som tandläkare ska ha i åtanken att vi är ett tandlaboratorium som kommer 
+        Ni som tandläkare ska ha i åtanke att vi är ett tandlaboratorium som kommer
         ställa upp med 100% åtagande utan ifrågasättning i alla aspekter!
       </p>
     </div>
   </section>
 
   <!-- ====== INFO SECTION ====== -->
-  <section id="info" class="py-5 bg-dark text-light" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+  <section id="info" class="py-5 bg-dark text-light" data-aos="fade-up" data-aos-duration="800">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="800">
           <p>
-            Laboratoriumet är ett modernt och välutrustat laboratorium med egen fräs-centrum. Alla produkter är 
-            producerade i Sverige av högsta kvalitet och vi kvalitetssäkrar all vår produktion före leverans 
+            Laboratoriumet är ett modernt och välutrustat laboratorium med egen fräs-centrum. Alla produkter är
+            producerade i Sverige av högsta kvalitet och vi kvalitetssäkrar all vår produktion före leverans
             till tandläkaren.
           </p>
           <p>
             (CE) – Enligt europaparlamentets och rådets förordning MDR (EU) 2017/745 om medicintekniska produkter.
           </p>
         </div>
-        <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+        <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="800">
           <img src="assets/images/ceramic-crowns-closeup.jpg" alt="Ceramic Crowns Closeup"
                class="img-fluid rounded shadow-sm">
         </div>
@@ -213,50 +207,201 @@
   </section>
 
   <!-- ====== OM OSS SECTION ====== -->
-  <section id="about" class="py-5 bg-light text-dark">
+  <section id="about" class="py-5 bg-light text-dark" data-aos="fade-up" data-aos-duration="800">
     <div class="container">
       <h2 class="section-heading mb-4">Om Oss</h2>
       <div class="row align-items-center">
-        
-        <!-- نص + قائمة -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="800">
           <ul class="about-list list-unstyled mb-4">
-            <li data-aos="fade-up" data-aos-delay="100"><span class="check-icon">✔</span> 3:E GENERATIONS ERFARENHET</li>
-            <li data-aos="fade-up" data-aos-delay="200"><span class="check-icon">✔</span> KVALITET</li>
-            <li data-aos="fade-up" data-aos-delay="300"><span class="check-icon">✔</span> ESTETIK</li>
-            <li data-aos="fade-up" data-aos-delay="400"><span class="check-icon">✔</span> SÄKER & SNABB LEVERANS</li>
+            <li><span class="check-icon">✔</span> 3:E GENERATIONS ERFARENHET</li>
+            <li><span class="check-icon">✔</span> KVALITET</li>
+            <li><span class="check-icon">✔</span> ESTETIK</li>
+            <li><span class="check-icon">✔</span> SÄKER & SNABB LEVERANS</li>
           </ul>
-          <p data-aos="fade-up" data-aos-delay="500">
-            Artem Dental Lab är teknisk specialiserat tandlaboratorium med inriktning på estetik.
-          </p>
-          <p data-aos="fade-up" data-aos-delay="600">
-            Vår kompetens är grundad på 25 års erfarenhet inom tillverkning av tandestetik. Allt för att återskapa svenska befolkningens leende.
-          </p>
-          <p data-aos="fade-up" data-aos-delay="700">
-            Slutresultat sätter vi i centrum, vilket innebär att vi alltid levererar protetik med högsta kvalitet och precision. 
-            Patientens önskemål är vårt fokus för att alltid kunna prestera personlig service på högsta nivå.
-          </p>
-          <a href="#" class="btn btn-om mt-3" data-aos="fade-up" data-aos-delay="800">Vårt arbete</a>
+          <p data-aos="fade-up" data-aos-duration="800">Artem Dental Lab är teknisk specialiserat tandlaboratorium med inriktning på estetik.</p>
+          <p data-aos="fade-up" data-aos-duration="800">Vår kompetens är grundad på 25 års erfarenhet inom tillverkning av tandestetik. Allt för att återskapa svenska befolkningens leende.</p>
+          <p data-aos="fade-up" data-aos-duration="800">Slutresultat sätter vi i centrum, vilket innebär att vi alltid levererar protetik med högsta kvalitet och precision. Patientens önskemål är vårt fokus för att alltid kunna prestera personlig service på högsta nivå.</p>
+          <a href="#gallery" class="btn btn-om mt-3" data-aos="fade-up" data-aos-duration="800">Vårt arbete</a>
         </div>
-        
-        <!-- الصور -->
-        <div class="col-lg-6 mt-5 mt-lg-0 about-images" data-aos="fade-left" data-aos-delay="500">
+        <div class="col-lg-6 about-images" data-aos="fade-left" data-aos-duration="800">
           <div class="about-image-wrapper mx-auto">
-            <img src="assets/images/fixed-bg.jpg" alt="Bild 1" class="img-fluid img2 shadow-sm">
-            <img src="assets/images/fixed-bg2.jpg" alt="Bild 2" class="img-fluid img1 shadow-sm">
-          </div>
+            <img src="assets/images/fixed-bg.jpg" class="img-fluid img2 rounded shadow-sm" alt="Bild 1">
+            <img src="assets/images/fixed-bg2.jpg" class="img-fluid img1 rounded shadow-sm" alt="Bild 2">
+          </div>  
         </div>
-
       </div>
     </div>
   </section>
+
+  <!-- ====== GALLERI SECTION ====== -->
+  <section id="gallery" class="py-5 bg-dark text-light" data-aos="fade-up" data-aos-duration="800">
+    <div class="container">
+      <h2 class="section-heading mb-4">Galleri</h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/images/alt-background-bw-1.jpg" class="img-fluid rounded shadow-sm" alt="Galleri Bild 1">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/images/alt-background-bw-2.jpg" class="img-fluid rounded shadow-sm" alt="Galleri Bild 2">
+        </div>
+        <div class="col-6 col-md-3 position-relative" data-aos="fade-up" data-aos-delay="300">
+          <video autoplay loop muted playsinline class="img-fluid rounded shadow-sm">
+            <source src="assets/images/ceramic-crowns-closeup.jpg" type="video/mp4">
+          </video>
+          <span class="video-overlay"><i class="bi bi-play-fill"></i></span>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
+          <img src="assets/images/ceramic-veneers-closeup.jpg" class="img-fluid rounded shadow-sm" alt="Galleri Bild 4">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="500">
+          <img src="assets/images/fixed-bg.jpg" class="img-fluid rounded shadow-sm" alt="Galleri Bild 5">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="600">
+          <img src="assets/images/fixed-bg1.jpg" class="img-fluid rounded shadow-sm" alt="Galleri Bild 6">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="700">
+          <img src="assets/images/fixed-bg2.jpg" class="img-fluid rounded shadow-sm" alt="Galleri Bild 7">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="800">
+          <img src="assets/images/gloved-hand-model.jpg" class="img-fluid rounded shadow-sm" alt="Galleri Bild 8">
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <button class="btn btn-outline-light btn-sm me-2">Ladda mer</button>
+        <a href="#" class="btn btn-gold btn-sm"><i class="bi bi-instagram me-1"></i>Följ oss på Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== REVIEWS SECTION ====== -->
+  <section id="reviews" class="py-5 bg-dark text-light" data-aos="fade-up" data-aos-duration="800">
+    <div class="container">
+      <h2 class="section-heading text-center mb-4">Reviews</h2>
+      <div class="reviews-list">
+        <div class="review-item mb-5">
+          <h5 class="reviewer-name">Sara Lindström</h5>
+          <p class="review-stars">★★★★★</p>
+          <p class="review-text">Fantastisk service och otrolig kvalitet! Jag kände mig sedd och uppskattad genom hela processen. Rekommenderar varmt till alla kollegor.</p>
+          <div class="review-source"><i class="bi bi-google"></i></div>
+        </div>
+        <hr class="border-secondary">
+        <div class="review-item my-5">
+          <h5 class="reviewer-name">Emil Johansson</h5>
+          <p class="review-stars">★★★★★</p>
+          <p class="review-text">Professionellt bemötande och blixtsnabb leverans. Känns tryggt att samarbeta med ett så engagerat team!</p>
+          <div class="review-source"><i class="bi bi-google"></i></div>
+        </div>
+        <hr class="border-secondary">
+        <div class="review-item my-5">
+          <h5 class="reviewer-name">Klara Svensson</h5>
+          <p class="review-stars">★★★★★</p>
+          <p class="review-text">Otroligt fina resultat och en varm, personlig kontakt. Kunde inte vara mer nöjd med mitt leende!</p>
+          <div class="review-source"><i class="bi bi-google"></i></div>
+        </div>
+        <hr class="border-secondary">
+        <div class="review-item mt-5 mb-0">
+          <h5 class="reviewer-name">Magnus Eriksson</h5>
+          <p class="review-stars">★★★★★</p>
+          <p class="review-text">Toppklass från start till mål! Tydlig kommunikation och fantastisk uppföljning. Kommer tillbaka igen!</p>
+          <div class="review-source"><i class="bi bi-google"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== VISIT US SECTION ====== -->
+  <section id="visit-us" class="py-5 bg-dark text-light" data-aos="fade-up" data-aos-duration="800">
+    <div class="container text-center">
+      <h2 class="section-heading mb-5">Välkomna att besöka oss</h2>
+      <div class="visit-group mb-5" data-aos="fade-up" data-aos-delay="100">
+        <h5 class="visit-title">KONTAKT</h5>
+        <p class="visit-text mb-1">076 – 775 15 11</p>
+        <p class="visit-text mb-1">info@artemdentallab.se</p>
+        <p class="visit-text">scan@artemdentallab.se</p>
+      </div>
+      <hr class="visit-divider">
+      <div class="visit-group my-5" data-aos="fade-up" data-aos-delay="200">
+        <h5 class="visit-title">ADRESS</h5>
+        <p class="visit-text">Gimogatan 2B, 752 20 Uppsala</p>
+      </div>
+      <hr class="visit-divider">
+      <div class="visit-group mt-5" data-aos="fade-up" data-aos-delay="300">
+        <h5 class="visit-title">ÖPPETTIDER</h5>
+        <p class="visit-text mb-1">Mån – Fre: 08:00 – 17:00</p>
+        <p class="visit-text">Lör & Sön: Stängt</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== KONTAKT SECTION ====== -->
+  <section id="contact" class="py-5 bg-dark text-light" data-aos="fade-up" data-aos-duration="800">
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="section-heading">Kontakta Oss</h2>
+          <p class="contact-intro">Kontakta oss gärna om du har några frågor! Vi försöker alltid svara så snabbt vi kan.</p>
+          <div class="social-icons mb-4">
+            <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </div>
+          <div class="contact-actions d-flex">
+            <div class="me-4 text-center">
+              <i class="bi bi-file-earmark-text contact-icon"></i>
+              <p class="action-label">Arbetsorder</p>
+            </div>
+            <div class="text-center">
+              <i class="bi bi-envelope contact-icon"></i>
+              <p class="action-label">Svarspost</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+          <form class="contact-form p-4 rounded shadow-sm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Namn:" required>
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="E-post:" required>
+              </div>
+              <div class="col-12">
+                <input type="text" class="form-control" placeholder="Klinikens namn:">
+              </div>
+              <div class="col-12">
+                <textarea class="form-control" rows="5" placeholder="Meddelande:" required></textarea>
+              </div>
+              <div class="col-12 text-end">
+                <button type="submit" class="btn btn-outline-light">Skicka</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== MAP SECTION ====== -->
+  <section id="map" class="mb-5">
+    <div class="container-fluid p-0">
+      <iframe
+        src="https://maps.google.com/maps?q=Gimogatan%202B%2C%20752%2020%20Uppsala%2C%20Sweden&output=embed"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="py-4 bg-dark text-center text-light">
+    <div class="container">
+      <p class="mb-0">© 2025 Tt tandtekniker. Alla rättigheter förbehållna.</p>
+    </div>
+  </footer>
 
   <!-- Tilt & skeleton-loader script -->
   <script>
     window.addEventListener('deviceorientation', e => {
       document.querySelectorAll('.card img').forEach(img => {
-        const tilt = (e.gamma || 0) / 30;
-        img.style.transform = `perspective(500px) rotateY(${tilt}deg)`;
+        img.style.transform = `perspective(500px) rotateY(${(e.gamma||0)/30}deg)`;
       });
     });
     document.querySelectorAll('.card img, .hero-video-el').forEach(el => {
@@ -270,5 +415,6 @@
 
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
